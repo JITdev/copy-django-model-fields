@@ -6,7 +6,7 @@ function parseModelString(str) {
         re = /(?:\S+)(?=[ |]\=.*Field.*)/g
 
     while ((i = re.exec(str))) {
-        arr.push(i[1])
+        arr.push(i)
     }
 
     return arr
@@ -27,7 +27,7 @@ function getCommands() {
 
             if (arr.length) {
                 editor.edit(edit => {
-                    edit.insert(pos, `(${arr.join(', ')}, )`)
+                    edit.insert(pos, `(${arr.join(', ')})`)
                 })
             } else {
                 vscode.window.showInformationMessage('No fields to paste')
