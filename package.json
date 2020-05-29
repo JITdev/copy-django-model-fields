@@ -2,8 +2,8 @@
     "name": "copy-django-model-fields",
     "displayName": "Copy Django model fields",
     "description": "Allows you to copy Django model fields and paste them as a tuple of field names",
-    "version": "0.0.5",
-    "publisher": "baterson",
+    "version": "0.0.1",
+    "publisher": "jitdev",
     "engines": {
         "vscode": "^1.24.0"
     },
@@ -21,7 +21,7 @@
     "main": "./extension",
     "repository": {
         "type": "git",
-        "url": "https://github.com/baterson/copy-django-model-fields.git"
+        "url": "https://github.com/JITdev/copy-django-model-fields.git"
     },
     "contributes": {
         "commands": [
