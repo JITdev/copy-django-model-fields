@@ -3,7 +3,7 @@ const vscode = require('vscode')
 function parseModelString(str) {
     let i,
         arr = [],
-        re = /(\S+)\s*=\s*[^(]*\(([^)]*)\)/g
+        re = /(?:\S+)(?=[ |]\=.*Field.*)/g
 
     while ((i = re.exec(str))) {
         arr.push(i[1])
